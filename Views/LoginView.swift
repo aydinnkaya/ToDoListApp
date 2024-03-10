@@ -20,7 +20,14 @@ struct LoginView: View {
                            angle: 15,
                            background: .pink)
                 
+              
+                
                 VStack(){
+                    if !viewModel.errorMessage.isEmpty {
+                        Text(viewModel.errorMessage)
+                            .foregroundStyle(.red)
+                    }
+                    
                     TextField("Enter your email ", text: $viewModel.email)
                         .font(.subheadline)
                         .padding(12)
@@ -52,7 +59,7 @@ struct LoginView: View {
                 TLButton(
                     title: "Log In",
                     background: .blue){
-                        
+                        viewModel.Login()
                     }
                 
                 

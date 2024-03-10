@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct RegisterView: View {
-    @State var fullName = ""
-    @State var email = ""
-    @State var password = ""
+  
+    @StateObject var viewModel = RegisterViewViewModel()
     
     var body: some View {
         
@@ -23,7 +22,11 @@ struct RegisterView: View {
                            background: .orange)
                 
                 VStack(){
-                    TextField("Full Name", text: $fullName)
+                    if !viewModel.errorMessage.isEmpty {
+                        Text(viewModel.errorMessage)
+                            .foregroundStyle(.red)
+                    }
+                    TextField("Full Name", text: $viewModel.fullName)
                         .font(.subheadline)
                         .padding(12)
                         .background(Color(.systemGray6))
@@ -31,7 +34,7 @@ struct RegisterView: View {
                         .padding(.horizontal ,24)
                         .autocorrectionDisabled()
                     
-                    TextField("Enter your email ", text: $email)
+                    TextField("Enter your email ", text: $viewModel.email)
                         .font(.subheadline)
                         .padding(12)
                         .background(Color(.systemGray6))
@@ -40,7 +43,7 @@ struct RegisterView: View {
                         .textInputAutocapitalization(.none)
                         .autocorrectionDisabled()
                     
-                    SecureField("Enter your password", text: $password)
+                    SecureField("Enter your password", text: $viewModel.password)
                         .font(.subheadline)
                         .padding(12)
                         .background(Color(.systemGray6))
