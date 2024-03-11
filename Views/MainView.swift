@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct MainView: View {
+    
+    @State var viewModel = MainViewViewModel()
+    
     var body: some View {
-           LoginView()
+        if viewModel.isSignedIn, !viewModel.curentUserId.isEmpty{
+            // Signed in
+            ToDoListView()
+        }else{
+            LoginView()
+        }
     }
 }
 

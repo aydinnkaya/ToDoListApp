@@ -26,7 +26,7 @@ struct RegisterView: View {
                         Text(viewModel.errorMessage)
                             .foregroundStyle(.red)
                     }
-                    TextField("Full Name", text: $viewModel.fullName)
+                    TextField("Full Name", text: $viewModel.name)
                         .font(.subheadline)
                         .padding(12)
                         .background(Color(.systemGray6))
@@ -51,9 +51,8 @@ struct RegisterView: View {
                         .padding(.horizontal ,24)
                 }
                 
-                
                 TLButton(title:"Create Account", background: .green){
-                    
+                    viewModel.Register()
                 }
                 
                 Spacer()
