@@ -5,6 +5,7 @@
 //  Created by Aydın KAYA on 9.03.2024.
 //
 
+import FirebaseDatabase
 import FirebaseFirestore
 import FirebaseAuth
 import Foundation
@@ -19,10 +20,8 @@ class RegisterViewViewModel : ObservableObject{
     init() {
         
     }
-    
     func Register(){
         guard validate() else {
-            
             return
         }
         
@@ -45,7 +44,6 @@ class RegisterViewViewModel : ObservableObject{
         
         
         let db = Firestore.firestore()
-        
         
         db.collection("users")
             .document(id)

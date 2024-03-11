@@ -13,7 +13,7 @@ struct RegisterView: View {
     
     var body: some View {
         
-        NavigationStack{
+        
             VStack{
                 // Header
                 HeaderView(title: "Register",
@@ -58,7 +58,7 @@ struct RegisterView: View {
                 Spacer()
                 
             }
-        }
+        
     }
 }
 

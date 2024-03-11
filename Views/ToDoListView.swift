@@ -8,11 +8,37 @@
 import SwiftUI
 
 struct ToDoListView: View {
+    @StateObject var viewModel = ToDoListViewViewModel()
+    
+    private let userId: String
+    
+    init(userId: String) {
+        self.userId = userId
+    }
+    
     var body: some View {
-        Text("Welcome to your Account!  ")
+
+        NavigationStack{
+            VStack{
+                
+            }
+            .navigationTitle("To Do List")
+            .toolbar{
+                Button(action: {
+                    viewModel.showingNewItemView = true
+                }, label: {
+                    Image(systemName: "plus")
+                    
+                })
+            }
+            .sheet(isPresented: $viewModel.showingNewItemView){
+                NewItemView()
+            }
+            
+        }
     }
 }
 
 #Preview {
-    ToDoListView()
+    ToDoListView(userId: "")
 }
