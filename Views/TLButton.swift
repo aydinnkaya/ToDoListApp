@@ -22,7 +22,7 @@ struct TLButton: View {
                 .font(.subheadline)
                 .fontWeight(.semibold)
                 .foregroundStyle(.white)
-                .frame(width: 360, height: 44)
+                .frame(width: 340, height: 44)
                 .background(background)
                 .clipShape(.rect(cornerRadius: 20))
         })

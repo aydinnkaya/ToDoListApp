@@ -10,6 +10,7 @@ import SwiftUI
 struct ToDoListView: View {
     @StateObject var viewModel = ToDoListViewViewModel()
     
+    
     private let userId: String
     
     init(userId: String) {
@@ -32,7 +33,7 @@ struct ToDoListView: View {
                 })
             }
             .sheet(isPresented: $viewModel.showingNewItemView){
-                NewItemView()
+                NewItemView(newItemPresented: $viewModel.showingNewItemView)
             }
             
         }
