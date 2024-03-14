@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ToDoListItemView: View {
-    @StateObject var viewModel = ToDoListViewViewModel()
+    @StateObject var viewModel = ToDoListItemViewViewModel()
     let item : ToDoListItem
     
     var body: some View {
@@ -25,12 +25,15 @@ struct ToDoListItemView: View {
             Spacer()
             
             Button(action: {
-                
+                viewModel.toggleIsDone(item: item)
                 
             }, label: {
                     Image(systemName: item.isDone ? "checkmark.circle.fill" : "circle")
+                    .foregroundStyle(.blue)
             })
+            
         }
+        
     }
 }
 
@@ -40,5 +43,5 @@ struct ToDoListItemView: View {
         title: "Get Milk",
         dueDate: Date().timeIntervalSince1970,
         createDate: Date().timeIntervalSince1970,
-        isDone: true))
+        isDone: false))
 }
