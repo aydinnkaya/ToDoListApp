@@ -1,6 +1,5 @@
 # ToDoListApp
 => Utilization of MVVM Architecture:
-
 The project is developed based on the Model-View-ViewModel (MVVM) architecture.
 MVVM separates the user interface (View), data model (Model), and logical operations (ViewModel), making the code more organized and manageable.
 Integration of Firestore Database:
