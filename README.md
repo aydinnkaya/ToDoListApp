@@ -1,21 +1,23 @@
 # ToDoListApp
-=> Utilization of MVVM Architecture:
-The project is developed based on the Model-View-ViewModel (MVVM) architecture.
-MVVM separates the user interface (View), data model (Model), and logical operations (ViewModel), making the code more organized and manageable.
-Integration of Firestore Database:
+**Utilization of MVVM Architecture:**
+   - The project is developed based on the Model-View-ViewModel (MVVM) architecture.
+   - MVVM separates the user interface (View), data model (Model), and logical operations (ViewModel), making the code more organized and manageable.
 
-=> Firestore is used for data storage.
-It provides real-time data synchronization, allowing users to access up-to-date information instantly.
-Firebase Authentication:
+ **Integration of Firestore Database:**
+   - Firestore is used for data storage.
+   - It provides real-time data synchronization, allowing users to access up-to-date information instantly.
 
-=> Firebase Authentication is preferred for user authentication.
-Users can log in using email/password, social media accounts, or other identity providers.
-Usage of SwiftUI:
+ **Firebase Authentication:**
+   - Firebase Authentication is preferred for user authentication.
+   - Users can log in using email/password, social media accounts, or other identity providers.
 
-=> SwiftUI is utilized in the application development process.
-It is a modern declarative UI framework that facilitates rapid creation of user interfaces.
+ **Usage of SwiftUI:**
+   - SwiftUI is utilized in the application development process.
+   - It is a modern declarative UI framework that facilitates rapid creation of user interfaces.
 
 <spacer>
+<spacer>
+
 
 https://github.com/aydinnkaya/ToDoListApp/assets/128883262/ecfaf2cc-3114-430a-86dd-7c5f3920a0fa
 
