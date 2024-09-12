@@ -45,13 +45,13 @@ See **ToDoListApp** in action with this detailed walkthrough:[Demo Video](https:
 
 ## 📸 App Screenshots
 
-| Task Overview | Task Details | Add New Task |
-|:-------------:|:------------:|:------------:|
-| ![Task Overview](https://github.com/aydinnkaya/ToDoListApp/assets/128883262/1950154b-818d-4b55-8148-55908b7182e0) | ![Task Details](https://github.com/aydinnkaya/ToDoListApp/assets/128883262/b85a9e3b-ef4a-4296-b930-1488cf2275fd) | ![Add New Task](https://github.com/aydinnkaya/ToDoListApp/assets/128883262/6c7ee92d-af8f-4c81-a057-56d85d7035ea) |
+| Login Light Mode | Login Dark Mode 
+|:-------------:|:------------:|
+| ![Login Light Mode](https://github.com/aydinnkaya/ToDoListApp/assets/128883262/b85a9e3b-ef4a-4296-b930-1488cf2275fd) | ![Task Overview](https://github.com/aydinnkaya/ToDoListApp/assets/128883262/1950154b-818d-4b55-8148-55908b7182e0) |
 
-| Completed Task View | Task Creation Form | Task Notification |
-|:------------------:|:------------------:|:-----------------:|
-| ![Completed Task](https://github.com/aydinnkaya/ToDoListApp/assets/128883262/20bde16c-697b-4e0b-8a7f-0fcbd5d8f86e) | ![Task Form](https://github.com/aydinnkaya/ToDoListApp/assets/128883262/6c7ee92d-af8f-4c81-a057-56d85d7035ea) | ![Task Notification](https://github.com/aydinnkaya/ToDoListApp/assets/128883262/6c7ee92d-af8f-4c81-a057-56d85d7035ea) |
+| Register Light Mode | Register Dark Mode |
+|:------------------:|:------------------:|
+| ![Completed Task](https://github.com/aydinnkaya/ToDoListApp/assets/128883262/20bde16c-697b-4e0b-8a7f-0fcbd5d8f86e) | ![Task Form](https://github.com/aydinnkaya/ToDoListApp/assets/128883262/6c7ee92d-af8f-4c81-a057-56d85d7035ea) |
 
 ---
 
